@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Nika Buzynska](https://up.htmlacademy.ru/htmlcss/35/user/2221685).
-* Наставник: `Неизвестно`.
+* Наставник: [Юлия Антонова](https://htmlacademy.ru/profile/talequale)
 
 ---
 
