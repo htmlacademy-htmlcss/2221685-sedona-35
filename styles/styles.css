@@ -122,21 +122,16 @@ body {
 }
 
 .advantages-item {
-  width: 400px;
   background-color: #83B3D31F;
 }
 
 .advantages-basic {
+  color: #FFFFFF;
   background-color: #82B3D3;
 }
 
-.advantages-intence {
+.advantages-intense {
   background-color: #83B3D333;
-}
-
-.advantages-image {
-width: 800px;
-
 }
 
 .advantages-transparent {
@@ -196,6 +191,10 @@ width: 800px;
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.find {
+  text-align: center;
 }
 
 .subscribe {
