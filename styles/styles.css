@@ -1,0 +1,245 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.container {
+  background-color: #FFFFFF;
+}
+
+.navigation {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.navigation-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.navigation-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  padding: 8px 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background-color: #756157;
+  border: 0;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button-secondary {
+  background-color: #82B3D3;
+}
+
+.button-favourite {
+  background-color: #7DB54F;
+}
+
+.button-clear {
+  background-color: transparent;
+}
+
+.view-button {
+  padding: 14px 12px;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.rating {
+  padding: 8px 50px;
+  color: #333333;
+  background: #F2F2F2;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.main-header {
+  color: #FFFFFF;
+  background-color:#000000;
+  background-image: url("../images/index-background.jpeg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.heading {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.advantages-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-item {
+  width: 400px;
+  background-color: #83B3D31F;
+}
+
+.advantages-basic {
+  background-color: #82B3D3;
+}
+
+.advantages-intence {
+  background-color: #83B3D333;
+}
+
+.advantages-image {
+width: 800px;
+
+}
+
+.advantages-transparent {
+  background-color: #FFFFFF;
+}
+
+.find-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.result-card-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer-social-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-button {
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer-contacts-phone {
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.breadcrumbs {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.result-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.subscribe {
+  color: #000000;
+  background-color:#ffffff;
+  height: 415px;
+  text-align: center;
+}
+
+.subscribe-main {
+  color: #ffffff;
+  background-color:#000000;
+  background-image: url("../images/blur-newsletter.jpeg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.newsletter-field {
+  background: #F2F2F2;
+  border-radius: 4px 0 0 4px;
+  border: 0;
+}
+
+.inner-header {
+  color: #FFFFFF;
+  background-color:#000000;
+  background-image: url("../images/catalog-background.jpeg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.catalog-filter-group {
+  border: 0;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
