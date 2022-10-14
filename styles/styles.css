@@ -18,7 +18,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  color: #000000;
+  color: #333333;
   background-color: #F2F2F2;
 }
 
@@ -44,6 +44,7 @@ body {
 }
 
 .button {
+  font-family: inherit;
   padding: 8px 50px;
   font-weight: 700;
   font-size: 16px;
@@ -200,7 +201,7 @@ body {
 .subscribe {
   color: #000000;
   background-color:#ffffff;
-  height: 415px;
+  min-height: 415px;
   text-align: center;
 }
 
@@ -213,9 +214,9 @@ body {
 }
 
 .newsletter-field {
-  background: #F2F2F2;
-  border-radius: 4px 0 0 4px;
+  background-color: #F2F2F2;
   border: 0;
+  border-radius: 4px 0 0 4px;
 }
 
 .inner-header {
