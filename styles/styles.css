@@ -14,7 +14,13 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -23,13 +29,38 @@ body {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0 auto;
+  width: 1200px;
   background-color: #FFFFFF;
 }
 
+/* шапка */
+
+.page-header {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
 .navigation {
+  display: flex;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+}
+
+.navigation-list {
+  width: 460px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  max-width: 310px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -37,11 +68,7 @@ body {
   text-decoration: none;
 }
 
-.navigation-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
+/* кнопки */
 
 .button {
   font-family: inherit;
@@ -87,6 +114,12 @@ body {
   text-transform: uppercase;
 }
 
+/* мейн */
+
+.main {
+  flex-grow: 1;
+}
+
 .main-header {
   color: #FFFFFF;
   background-color:#000000;
@@ -94,6 +127,15 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.advantages-intro {
+  padding: 69px 275px;
 }
 
 .heading {
@@ -110,7 +152,9 @@ body {
 }
 
 .advantages-list {
+  display: flex;
   list-style-type: none;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -127,6 +171,7 @@ body {
 }
 
 .advantages-basic {
+  display: flex;
   color: #FFFFFF;
   background-color: #82B3D3;
 }
@@ -139,6 +184,22 @@ body {
   background-color: #FFFFFF;
 }
 
+.advantages-text-content {
+  min-height: 384px;
+  padding-left: 85px;
+  padding-right: 85px;
+  padding-top: 103px;
+  width: 400px;
+  box-sizing: border-box;
+}
+
+/* каталог */
+
+.find {
+  padding: 92px 304px;
+  text-align: center;
+}
+
 .find-title {
   font-weight: 700;
   font-size: 30px;
@@ -149,25 +210,6 @@ body {
 .result-card-link {
   color: #000000;
   text-decoration: none;
-}
-
-.footer-social-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.social-button {
-  color: #000000;
-  text-decoration: none;
-}
-
-.footer-contacts-phone {
-  font-size: 40px;
-  line-height: 40px;
-  color: #000000;
-  text-decoration: none;
-  text-transform: uppercase;
 }
 
 .breadcrumbs {
@@ -194,14 +236,12 @@ body {
   padding: 0;
 }
 
-.find {
-  text-align: center;
-}
-
 .subscribe {
+  padding: 96px 258px;
+  box-sizing: border-box;
+  min-height: 415px;
   color: #000000;
   background-color:#ffffff;
-  min-height: 415px;
   text-align: center;
 }
 
@@ -242,4 +282,40 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+}
+
+/* Футер */
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 70px 30px 70px;
+}
+
+.footer-social {
+  width: 190px;
+}
+
+.footer-social-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-button {
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer-contacts-phone {
+  width: 331px;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer-signature {
+  width: 115px;
 }
