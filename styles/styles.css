@@ -193,11 +193,57 @@ body {
   box-sizing: border-box;
 }
 
-/* каталог */
-
-.find {
+.find-hotels {
   padding: 92px 304px;
   text-align: center;
+}
+
+/* каталог */
+
+.inner-header {
+  padding-left: 70px;
+  padding-right: 70px;
+  color: #FFFFFF;
+  background-color:#000000;
+  background-image: url("../images/catalog-background.jpeg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.catalog-filter-group {
+  width: 151px;
+  margin-right: 70px;
+  border: 0;
+  padding: 0;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.catalog-price {
+  width: 288px;
+  margin-left: auto;
+}
+
+.form-button {
+  width: 191px;
+}
+
+.find {
+  padding: 50px 70px 60px 70px;
+}
+
+.find-container {
+  display: flex;
 }
 
 .find-title {
@@ -205,6 +251,24 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+}
+
+.sorting-container {
+  width: 522px;
+  margin-left: auto;
+}
+
+.result-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.result-card {
+  width: 340px;
+  padding: 20px;
+  box-sizing: border-box;
+
 }
 
 .result-card-link {
@@ -216,6 +280,10 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.catalog-filter {
+  display: flex;
 }
 
 .catalog-filter-list {
@@ -231,9 +299,14 @@ body {
 }
 
 .pagination {
+  display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.pagination-item {
+  width: 60px;
 }
 
 .subscribe {
@@ -259,30 +332,6 @@ body {
   border-radius: 4px 0 0 4px;
 }
 
-.inner-header {
-  color: #FFFFFF;
-  background-color:#000000;
-  background-image: url("../images/catalog-background.jpeg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  text-align: center;
-}
-
-.inner-header-title {
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 78px;
-}
-
-.catalog-filter-group {
-  border: 0;
-}
-
-.catalog-filter-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-}
 
 /* Футер */
 
