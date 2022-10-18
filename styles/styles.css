@@ -121,6 +121,7 @@ body {
 }
 
 .main-header {
+  padding: 51px 371px 80px;
   color: #FFFFFF;
   background-color:#000000;
   background-image: url("../images/index-background.jpeg");
@@ -129,16 +130,13 @@ body {
   text-align: center;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto;
-}
-
 .advantages-intro {
-  padding: 69px 275px;
+  padding: 69px 70px;
 }
 
 .heading {
+  max-width: 620px;
+  margin: 0 auto;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
@@ -149,6 +147,17 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+}
+.find-description {
+  width: 592px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subscribe-description {
+  width: 475px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .advantages-list {
@@ -189,12 +198,13 @@ body {
   padding-left: 85px;
   padding-right: 85px;
   padding-top: 103px;
+  padding-bottom: 80px;
   width: 400px;
   box-sizing: border-box;
 }
 
 .find-hotels {
-  padding: 92px 304px;
+  padding: 92px 70px;
   text-align: center;
 }
 
@@ -310,7 +320,7 @@ body {
 }
 
 .subscribe {
-  padding: 96px 258px;
+  padding: 96px 70px;
   box-sizing: border-box;
   min-height: 415px;
   color: #000000;
