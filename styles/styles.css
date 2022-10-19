@@ -121,7 +121,7 @@ body {
 }
 
 .main-header {
-  padding: 51px 371px 80px;
+  padding: 51px 70px 80px;
   color: #FFFFFF;
   background-color:#000000;
   background-image: url("../images/index-background.jpeg");
@@ -211,8 +211,7 @@ body {
 /* каталог */
 
 .inner-header {
-  padding-left: 70px;
-  padding-right: 70px;
+  padding: 30px 70px 70px;
   color: #FFFFFF;
   background-color:#000000;
   background-image: url("../images/catalog-background.jpeg");
@@ -224,6 +223,7 @@ body {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
 }
 
 .catalog-filter-group {
@@ -269,16 +269,25 @@ body {
 }
 
 .result-list {
+  padding: 40px 70px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: start;
 }
 
 .result-card {
   width: 340px;
   padding: 20px;
   box-sizing: border-box;
+}
 
+.result-card:nth-child(n + 4){
+  margin-top: 20px;
+}
+
+.result-card:nth-child(3n + 2),
+.result-card:nth-child(3n + 3) {
+  margin-left: 20px;
 }
 
 .result-card-link {
@@ -287,9 +296,15 @@ body {
 }
 
 .breadcrumbs {
-  list-style-type: none;
-  margin: 0;
+  display: flex;
+  min-width: 114px;
+  margin: 8px 0;
   padding: 0;
+  list-style-type: none;
+}
+
+.breadcrumbs-item {
+  padding: 0 10px;
 }
 
 .catalog-filter {
