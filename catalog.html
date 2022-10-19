@@ -47,6 +47,11 @@
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="index.html">
+                <img class="breadcrumbs-home-page" width="13" height="15" alt="Home Page" src="images/bc-house.svg">
+              </a>
+            </li>
+            <li class="breadcrumbs-item">
               <a class="breadcrumbs-link">Гостиницы</a>
             </li>
           </ul>
@@ -101,7 +106,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group catalog-price">
                 <legend class="catalog-filter-title">Стоимость,₽:</legend>
                 <div class="price">
                   <label class="price-min">
@@ -117,29 +122,36 @@
                   </label>
                 </div>
               </fieldset>
-              <button class="button button-secondary" type="submit">Применить</button>
-              <button class="button button-clear" type="reset">Сбросить</button>
+              <div class="form-button">
+                <button class="button button-secondary" type="submit">Применить</button>
+                <button class="button button-clear" type="reset">Сбросить</button>
+              </div>
             </form>
           </section>
         </header>
 
         <section class="find">
-          <h2 class="find-title">Найдено гостиниц:38</h2>
-          <select class="select-control" aria-label="Сортировка">
-            <option value="cheap">Сначала дешёвые</option>
-            <option value="popular">Сначала популярные</option>
-            <option value="expensive">Сначала дорогие</option>
-          </select>
-          <a class="view-button" href="#">
-            <span class="visually-hidden">Показать карточки</span>
-          </a>
-          <a class="view-button" href="#">
-            <span class="visually-hidden">Показать галерею</span>
-          </a>
-          <a class="view-button" href="#">
-            <span class="visually-hidden">Показать список</span>
-          </a>
-
+          <div class="find-container">
+            <h2 class="find-title">Найдено гостиниц:38</h2>
+            <div class="sorting-container">
+              <select class="select-control" aria-label="Сортировка">
+                <option value="cheap">Сначала дешёвые</option>
+                <option value="popular">Сначала популярные</option>
+                <option value="expensive">Сначала дорогие</option>
+              </select>
+              <div class="view-container">
+                <a class="view-button" href="#">
+                  <span class="visually-hidden">Показать карточки</span>
+                </a>
+                <a class="view-button" href="#">
+                  <span class="visually-hidden">Показать галерею</span>
+                </a>
+                <a class="view-button" href="#">
+                  <span class="visually-hidden">Показать список</span>
+                </a>
+              </div>
+            </div>
+          </div>
           <ul class="result-list">
             <li class="result-card">
               <a class="result-card-link" href="#">
