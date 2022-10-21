@@ -362,6 +362,20 @@ body {
   text-decoration: none;
 }
 
+.result-information-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.result-information-container .button {
+  padding-top: 8px;
+  min-width: 140px;
+  min-height: 36px;
+  text-align: center;
+}
+
+.result-information-container:nth-child(2n + 1)
+
 .breadcrumbs {
   display: flex;
   min-width: 114px;
