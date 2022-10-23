@@ -36,8 +36,8 @@
                 <span class="visually-hidden">Избранное</span>
               </a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Хочу сюда</a>
+            <li class="navigation-item navigation-button-container">
+              <a class="button" href="#">Хочу сюда</a>
             </li>
           </ul>
         </nav>
@@ -132,7 +132,7 @@
 
         <section class="find">
           <div class="find-container">
-            <h2 class="find-title">Найдено гостиниц:38</h2>
+            <h2 class="find-title">Найдено гостиниц: 38</h2>
             <div class="sorting-container">
               <select class="select-control" aria-label="Сортировка">
                 <option value="cheap">Сначала дешёвые</option>
@@ -159,11 +159,16 @@
                   alt="Гостиница Amara Resort & Spa">
                 <h3 class="result-card-title">Amara Resort & Spa</h3>
               </a>
-              <p class="result-description">Гостиница</p>
-              <span class="result-card-price">от 4000₽</span>
-              <a class="button" href="#">Подробнее</a>
-              <button class="button button-secondary" type="button">В Избранное</button>
-              <span class="rating">Рейтинг: 8,5</span>
+              <p class="result-description-container">
+                <span class="result-description">Гостиница</span>
+                <span class="result-card-price">от 4000₽</span>
+              </p>
+              <div class="result-information-container">
+                <a class="button result-element" href="#">Подробнее</a>
+                <button class="button button-secondary result-element" type="button">В Избранное</button>
+                <p class="rating-stars result-element">★★★★</p>
+                <p class="rating result-element">Рейтинг: 8,5</p>
+              </div>
             </li>
             <li class="result-card">
               <a class="result-card-link" href="#">
@@ -171,11 +176,16 @@
                   alt="Гостиница Villas at Poco Diablo">
                 <h3 class="result-card-title">Villas at Poco Diablo</h3>
               </a>
-              <p class="result-description">Гостиница</p>
-              <span class="result-card-price">от 5000₽</span>
-              <a class="button" href="#">Подробнее</a>
-              <button class="button button-favourite" type="button">В Избранном</button>
-              <span class="rating">Рейтинг: 9,2</span>
+              <p class="result-description-container">
+                <span class="result-description">Гостиница</span>
+                <span class="result-card-price">от 5000₽</span>
+              </p>
+              <div class="result-information-container">
+                <a class="button result-element" href="#">Подробнее</a>
+                <button class="button button-favourite result-element" type="button">В Избранном</button>
+                <p class="rating-stars result-element">★★★★</p>
+                <p class="rating result-element">Рейтинг: 9,2</p>
+              </div>
             </li>
             <li class="result-card">
               <a class="result-card-link" href="#">
@@ -183,11 +193,16 @@
                   alt="Гостиница Desert Quail Inn">
                 <h3 class="result-card-title">Desert Quail Inn</h3>
               </a>
-              <p class="result-description">Гостиница</p>
-              <span class="result-card-price">от 2500₽</span>
-              <a class="button" href="#">Подробнее</a>
-              <button class="button button-secondary" type="button">В Избранное</button>
-              <span class="rating">Рейтинг: 6,9</span>
+              <p class="result-description-container">
+                <span class="result-description">Гостиница</span>
+                <span class="result-card-price">от 2500₽</span>
+              </p>
+              <div class="result-information-container">
+                <a class="button result-element" href="#">Подробнее</a>
+                <button class="button button-secondary result-element" type="button">В Избранное</button>
+                <p class="rating-stars result-element">★★★</p>
+                <p class="rating result-element">Рейтинг: 6,9</p>
+              </div>
             </li>
             <li class="result-card">
               <a class="result-card-link" href="#">
@@ -195,11 +210,16 @@
                   alt="Гостиница GreenTree Inn">
                 <h3 class="result-card-title">GreenTree Inn</h3>
               </a>
-              <p class="result-description">Гостиница</p>
-              <span class="result-card-price">от 1500₽</span>
-              <a class="button" href="#">Подробнее</a>
-              <button class="button button-secondary" type="button">В Избранное</button>
-              <span class="rating">Рейтинг: 5,0</span>
+              <p class="result-description-container">
+                <span class="result-description">Гостиница</span>
+                <span class="result-card-price">от 1500₽</span>
+              </p>
+              <div class="result-information-container">
+                <a class="button result-element" href="#">Подробнее</a>
+                <button class="button button-secondary result-element" type="button">В Избранное</button>
+                <p class="rating-stars result-element">★★</p>
+                <p class="rating result-element">Рейтинг: 5,0</p>
+              </div>
             </li>
           </ul>
           <ul class="pagination">
@@ -216,7 +236,7 @@
               <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              ...
+              <a class="button-more" href="#">...</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">10</a>
