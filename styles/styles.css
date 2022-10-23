@@ -106,7 +106,9 @@ body {
 .button {
   display: inline-block;
   font-family: inherit;
-  padding: 8px 50px;
+  padding: 8px 18px;
+  width: 191px;
+  box-sizing: border-box;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -116,6 +118,7 @@ body {
   border-radius: 4px;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .button-secondary {
@@ -133,16 +136,6 @@ body {
 .navigation-button-container {
   display: flex;
   align-items: center;
-}
-
-.rating {
-  padding: 8px 50px;
-  color: #333333;
-  background: #F2F2F2;
-  border-radius: 4px;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
 }
 
 .button-more {
@@ -299,7 +292,7 @@ body {
   /* margin: 0; */
   font-weight: 700;
   font-size: 30px;
-  line-height: 49px;
+  line-height: 4px;
   text-transform: uppercase;
 }
 
@@ -362,19 +355,57 @@ body {
   text-decoration: none;
 }
 
+.result-description-container {
+  display: flex;
+  margin: 16px 0;
+}
+
+.result-description {
+  width: 140px;
+}
+
+.result-card-price {
+  width: 140px;
+  margin-left: auto;
+  text-align: right;
+}
+
 .result-information-container {
   display: flex;
   flex-wrap: wrap;
 }
 
-.result-information-container .button {
+.result-element{
   padding-top: 8px;
-  min-width: 140px;
-  min-height: 36px;
+  width: 140px;
+  margin-bottom: 0;
+}
+
+.result-element:nth-child(2n + 1) {
+  margin-right: 20px;
+}
+
+.result-element:nth-child(n + 3) {
+  margin-top: 16px;
+}
+
+.rating {
+  padding: 8px 18px;
+  box-sizing: border-box;
+  color: #333333;
+  background: #F2F2F2;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
   text-align: center;
 }
 
-.result-information-container:nth-child(2n + 1)
+.rating-stars {
+  letter-spacing: 0.35em;
+  color: #82B3D3;
+  text-align: left;
+}
 
 .breadcrumbs {
   display: flex;
@@ -454,12 +485,24 @@ body {
   background-repeat: no-repeat;
 }
 
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter-form .button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
 .newsletter-field {
+  width: 452px;
+  height: 52px;
+  padding: 0 20px;
   background-color: #F2F2F2;
   border: 0;
   border-radius: 4px 0 0 4px;
 }
-
 
 /* Футер */
 
@@ -481,12 +524,10 @@ body {
   padding: 0;
 }
 
-.footer-social-item {
+.social-button {
+  display: inline-block;
   width: 48px;
   height: 40px;
-}
-
-.social-button {
   color: #000000;
   text-decoration: none;
 }
