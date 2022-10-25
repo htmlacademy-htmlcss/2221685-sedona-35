@@ -1,0 +1,539 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #F2F2F2;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0 auto;
+  width: 1200px;
+  background-color: #FFFFFF;
+}
+
+/* шапка */
+
+.page-header {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.navigation {
+  display: flex;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 460px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  max-width: 310px;
+  margin-left: auto;
+}
+
+.navigation-user .navigation-link {
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.navigation-link {
+  display: block;
+  padding: 20px 16px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.navigation-logo {
+  display: block;
+  position: relative;
+  z-index: 1;
+  margin-bottom: -6px;
+}
+
+.page-header-logo{
+  vertical-align: top;
+}
+
+
+/* кнопки */
+
+.button {
+  display: inline-block;
+  font-family: inherit;
+  padding: 8px 18px;
+  width: 191px;
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background-color: #756157;
+  border: 0;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.button-secondary {
+  background-color: #82B3D3;
+}
+
+.button-favourite {
+  background-color: #7DB54F;
+}
+
+.button-clear {
+  background-color: transparent;
+}
+
+.navigation-button-container {
+  display: flex;
+  align-items: center;
+}
+
+.button-more {
+  padding: 16px 21px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* мейн */
+
+.main {
+  flex-grow: 1;
+}
+
+.main-header {
+  padding: 51px 70px 80px;
+  color: #FFFFFF;
+  background-color:#000000;
+  background-image: url("../images/index-background.jpeg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.advantages-intro {
+  padding: 69px 70px;
+}
+
+.heading {
+  max-width: 620px;
+  margin: 0 auto 20px;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.description {
+  margin-bottom: 54px;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+.find-description {
+  width: 592px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subscribe-description {
+  width: 475px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advantages-list {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-item {
+  background-color: #83B3D31F;
+}
+
+.advantages-basic {
+  display: flex;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.advantages-intense {
+  background-color: #83B3D333;
+}
+
+.advantages-transparent {
+  background-color: #FFFFFF;
+}
+
+.advantages-text-content {
+  min-height: 384px;
+  padding-left: 85px;
+  padding-right: 85px;
+  padding-top: 103px;
+  padding-bottom: 80px;
+  width: 400px;
+  box-sizing: border-box;
+}
+
+.find-hotels {
+  padding: 92px 70px;
+  text-align: center;
+}
+
+/* каталог */
+
+.inner-header {
+  padding: 30px 70px 70px;
+  color: #FFFFFF;
+  background-color:#000000;
+  background-image: url("../images/catalog-background.jpeg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  margin: 0;
+}
+
+.catalog-filter-group {
+  width: 151px;
+  margin-right: 70px;
+  border: 0;
+  padding: 0;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+
+.catalog-price {
+  width: 288px;
+  margin-left: auto;
+}
+
+.form-button {
+  width: 191px;
+}
+
+.find {
+  padding: 50px 70px 60px 70px;
+}
+
+.find-container {
+  display: flex;
+}
+
+.find-title {
+  /* margin: 0; */
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 4px;
+  text-transform: uppercase;
+}
+
+.sorting-container {
+  display: flex;
+  width: 522px;
+  margin-left: auto;
+}
+
+.select-control {
+  width: 292px;
+  height: 49px;
+}
+
+.view-container {
+  display: flex;
+  margin-left: 70px;
+}
+
+.view-button {
+  width: 48px;
+  height: 48px;
+  padding: 14px 12px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.view-button + .view-button {
+  margin-left: 8px;
+}
+
+.result-list {
+  display: grid;
+  grid-template-rows: 438px 438px;
+  grid-template-columns: 340px 340px 340px;
+  gap: 20px;
+}
+
+.result-card {
+  width: 340px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+.result-card-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.result-description-container {
+  display: flex;
+  margin: 16px 0;
+}
+
+.result-description {
+  width: 140px;
+}
+
+.result-card-price {
+  width: 140px;
+  margin-left: auto;
+  text-align: right;
+}
+
+.result-information-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.result-element{
+  padding-top: 8px;
+  width: 140px;
+  margin-bottom: 0;
+}
+
+.result-element:nth-child(2n + 1) {
+  margin-right: 20px;
+}
+
+.result-element:nth-child(n + 3) {
+  margin-top: 16px;
+}
+
+.rating {
+  padding: 8px 18px;
+  box-sizing: border-box;
+  color: #333333;
+  background: #F2F2F2;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.rating-stars {
+  letter-spacing: 0.35em;
+  color: #82B3D3;
+  text-align: left;
+}
+
+.breadcrumbs {
+  display: flex;
+  min-width: 114px;
+  margin-top: 8px;
+  margin-bottom: 40px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.breadcrumbs-item {
+  padding: 0 10px;
+}
+
+.catalog-filter {
+  display: flex;
+}
+
+.catalog-filter-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.result-list {
+  list-style-type: none;
+  margin: 40px 0;
+  padding: 0;
+}
+
+/* Пагинация */
+
+.pagination {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-item {
+  display: flex;
+  width: 60px;
+  text-align: center;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding:12px 17px;
+  color: #FFFFFF;
+  background: #82B3D3;
+  border-radius: 4px;
+  line-height: 36px;
+  text-decoration: none;
+}
+
+.subscribe {
+  padding: 96px 70px;
+  box-sizing: border-box;
+  min-height: 415px;
+  color: #000000;
+  background-color:#ffffff;
+  text-align: center;
+}
+
+.subscribe-main {
+  color: #ffffff;
+  background-color:#000000;
+  background-image: url("../images/blur-newsletter.jpeg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter-form .button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.newsletter-field {
+  font-family: "PT Sans", sans-serif ;
+  font-size: 18px;
+  width: 452px;
+  height: 52px;
+  padding: 0 20px;
+  background-color: #F2F2F2;
+  border: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+/* Футер */
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 70px 30px 70px;
+}
+
+.footer-social {
+  width: 190px;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-button {
+  display: inline-block;
+  width: 48px;
+  height: 40px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer-contacts-phone {
+  width: 331px;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer-signature {
+  width: 115px;
+}
