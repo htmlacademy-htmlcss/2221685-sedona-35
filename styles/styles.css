@@ -328,11 +328,10 @@ body {
 }
 
 .result-list {
-  padding: 40px 70px;
-  margin: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: start;
+  display: grid;
+  grid-template-rows: 438px 438px;
+  grid-template-columns: 340px 340px 340px;
+  gap: 20px;
 }
 
 .result-card {
@@ -341,14 +340,6 @@ body {
   box-sizing: border-box;
 }
 
-.result-card:nth-child(n + 4){
-  margin-top: 20px;
-}
-
-.result-card:nth-child(3n + 2),
-.result-card:nth-child(3n + 3) {
-  margin-left: 20px;
-}
 
 .result-card-link {
   color: #000000;
@@ -496,6 +487,8 @@ body {
 }
 
 .newsletter-field {
+  font-family: "PT Sans", sans-serif ;
+  font-size: 18px;
   width: 452px;
   height: 52px;
   padding: 0 20px;
