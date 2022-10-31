@@ -537,15 +537,16 @@ body {
 .breadcrumbs-item {
   position: relative;
   margin-right: 28px;
+  font-size: 16px;
 }
 
 .breadcrumbs-item::after {
   position: absolute;
   background-image: url("../images/greater-than.svg");
   top: 5px;
-  right: -24px;
-  width: 12px;
-  height: 12px;
+  right: -18px;
+  width: 7px;
+  height: 10px;
   content: "";
   background-repeat: no-repeat
 }
