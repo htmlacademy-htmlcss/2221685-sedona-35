@@ -72,6 +72,14 @@ body {
   padding: 0;
 }
 
+.navigation-link {
+  position: relative;
+  display: block;
+  padding: 20px 16px;
+  color: #000000;
+  text-decoration: none;
+}
+
 .navigation-user {
   max-width: 310px;
   margin-left: auto;
@@ -88,24 +96,32 @@ body {
   margin-left: 20px;
 }
 
-.navigation-user .navigation-item:nth-child(1) .navigation-link{
+.navigation-magnifying-glass{
   background-image: url("../images/magnifying-glass.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.navigation-user .navigation-item:nth-child(2) .navigation-link{
+.navigation-favourite {
+  position: relative;
   background-image: url("../images/heart.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.navigation-link {
-  position: relative;
-  display: block;
-  padding: 20px 16px;
-  color: #000000;
-  text-decoration: none;
+.navigation-favourite-icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 11px;
+  left: 20px;
+  border-radius: 50%;
+  font-weight: 400;
+  font-size: 10px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 20px;
+  background-color: #7DB54F;
 }
 
 .navigation-link-current::after {
@@ -149,7 +165,6 @@ body {
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
-  outline: none;
 }
 
 .button-secondary {
@@ -189,6 +204,76 @@ body {
   padding: 16px 21px;
   text-align: center;
   text-decoration: none;
+}
+
+.button:hover {
+  background-color: #615048;
+}
+
+.button:focus {
+  background-color:#615048;
+}
+
+.button:active {
+  color:#FFFFFF4D;
+  background-color:#756157;
+}
+
+.button:disabled {
+  background-color:#E5E5E5;
+}
+
+.button-secondary:hover {
+  background-color: #68A2CA;
+}
+
+.button-secondary:focus {
+  background-color: #68A2CA;
+}
+.button-secondary:active {
+  color: #FFFFFF4D;
+  background-color: #82B3D3;
+}
+
+.button-secondary:disabled {
+  background-color: #E5E5E5;
+}
+
+.button-favourite:hover {
+  background-color: #6C9E42;
+}
+
+.button-favourite:focus {
+  background-color: #6C9E42;
+}
+
+.button-favourite:active {
+  color: #FFFFFF4D;
+  background-color: #7DB54F;
+}
+
+.button-clear:hover {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+}
+
+.button-clear:focus {
+  color: #FFFFFF;
+  background-color: transparent;
+  box-shadow: inset 0 0 0 3px rgba(131, 179, 211, 1);
+  outline: none;
+}
+
+.view-button:hover {
+  border-color: #000000;
+}
+
+.view-button:focus {
+  border-color: #68A2CA;
+}
+
+.view-button:active {
+  border-color: #000000;
 }
 
 /* мейн */
@@ -537,15 +622,16 @@ body {
 .breadcrumbs-item {
   position: relative;
   margin-right: 28px;
+  font-size: 16px;
 }
 
 .breadcrumbs-item::after {
   position: absolute;
   background-image: url("../images/greater-than.svg");
   top: 5px;
-  right: -24px;
-  width: 12px;
-  height: 12px;
+  right: -18px;
+  width: 7px;
+  height: 10px;
   content: "";
   background-repeat: no-repeat
 }
@@ -680,12 +766,13 @@ body {
 }
 
 .htmlacademy-link {
-
+  display: block;
 }
 
 .htmlacademy-logo {
-  position: absolute;
+  display: block;
   fill:#000000;
+  width: 115px;
 }
 
 .footer-contacts-phone {
@@ -697,81 +784,11 @@ body {
   text-transform: uppercase;
 }
 
-.footer-signature {
-  width: 115px;
-}
-
 /* состояния */
 
-.button:hover {
-  background-color: #615048;
-}
 
-.button:focus {
-  background-color:#615048;
-}
 
-.button:active {
-  color:#FFFFFF4D;
-  background-color:#756157;
-}
 
-.button:disabled {
-  background-color:#E5E5E5;
-}
-
-.button-secondary:hover {
-  background-color: #68A2CA;
-}
-
-.button-secondary:focus {
-  background-color: #68A2CA;
-}
-.button-secondary:active {
-  color: #FFFFFF4D;
-  background-color: #82B3D3;
-}
-
-.button-secondary:disabled {
-  background-color: #E5E5E5;
-}
-
-.button-favourite:hover {
-  background-color: #6C9E42;
-}
-
-.button-favourite:focus {
-  background-color: #6C9E42;
-}
-
-.button-favourite:active {
-  color: #FFFFFF4D;
-  background-color: #7DB54F;
-}
-
-.button-clear:hover {
-  color: rgba(255, 255, 255, 0.6);
-  background-color: transparent;
-}
-
-.button-clear:focus {
-  color: #FFFFFF;
-  background-color: transparent;
-  box-shadow: inset 0 0 0 3px rgba(131, 179, 211, 1);
-  outline: none;
-}
-
-.view-button:hover {
-  border-color: #000000;
-}
-
-.view-button:focus {
-  border-color: #68A2CA;
-}
-
-.view-button:active {
-  border-color: #000000;
-}
 
 .pagination-link:hover {
   background-color: #68A2CA;
