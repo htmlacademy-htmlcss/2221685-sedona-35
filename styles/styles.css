@@ -1406,6 +1406,19 @@ body {
   background-color: #82B3D3;
 }
 
+.pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
+  cursor: pointer;
+}
+
+.pagination-current:hover,
+.pagination-current:focus,
+.pagination-current:active {
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
 .social-button:hover .social-icon {
   fill: #68A2CA;
 }
