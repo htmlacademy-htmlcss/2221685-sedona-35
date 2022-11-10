@@ -19,7 +19,8 @@ html {
 }
 
 body {
-  height: 100%;
+  min-height: 100%;
+  min-width: 1280px;
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -171,6 +172,7 @@ body {
 
 .button-secondary {
   background-color: #82B3D3;
+  margin: 0;
 }
 
 .button-favourite {
@@ -278,7 +280,7 @@ body {
 }
 
 .button-clear:disabled {
-  color: rgba (255, 255, 255, 0.1)
+  color: rgba(255, 255, 255, 0.1);
 }
 
 .view-button:hover {
@@ -312,7 +314,7 @@ body {
 
 .main-header::after {
   position: absolute;
-  background-image: url(../images/crown.svg);
+  background-image: url("../images/crown.svg");
   bottom: 0;
   left: 0;
   right: 0;
@@ -536,7 +538,7 @@ body {
 }
 
 .control-input[type="checkbox"]:checked + .control-mark {
-  background-image: url(../images/tick.svg);
+  background-image: url("../images/tick.svg");
   background-repeat: no-repeat;
   background-size: 12px 10px;
   background-position: center;
@@ -685,7 +687,7 @@ body {
 }
 
 .find {
-  padding: 50px 70px 60px 70px;
+  padding: 50px 70px 52px 70px;
 }
 
 .find-container {
@@ -712,12 +714,12 @@ body {
 
 .sorting-container {
   display: flex;
-  width: 522px;
+  max-width: 690px;
   margin-left: auto;
 }
 
 .select-control {
-  width: 100%;
+  width: 292px;
   max-height: 49px;
   padding: 8px 18px;
   padding-right: 48px;
@@ -752,12 +754,16 @@ body {
 
 .view-container {
   display: flex;
+  flex-wrap: wrap;
   margin-left: 70px;
+  margin-right: -8px;
 }
 
 .view-button {
   width: 48px;
   height: 48px;
+  margin-right: 8px;
+  margin-bottom: 8px;
   box-sizing: border-box;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
@@ -765,10 +771,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 16px 14px;
-}
-
-.view-button + .view-button {
-  margin-left: 8px;
 }
 
 .view-cards {
@@ -792,7 +794,7 @@ body {
   grid-template-columns: 340px 340px 340px;
   gap: 20px;
   list-style-type: none;
-  margin: 40px 0;
+  margin: 32px 0 40px;
   padding: 0;
   padding-bottom: 39px;
   border-bottom: 1px solid #E6E6E6;
@@ -934,6 +936,7 @@ body {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -942,6 +945,7 @@ body {
 .pagination-item {
   display: flex;
   width: 60px;
+  margin-bottom: 8px;
   text-align: center;
 }
 
@@ -1095,6 +1099,7 @@ body {
   border-radius: 25px;
   border: none;
   background-color: #F2F2F2;
+  cursor: pointer;
 }
 
 .modal-close-icon {
@@ -1166,7 +1171,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  background-image: url(../images/calendar.svg);
+  background-image: url("../images/calendar.svg");
   background-repeat: no-repeat;
   background-size: 16px 15px;
   background-position: center right 22px;
@@ -1202,7 +1207,8 @@ body {
 
 .modal-form-number {
   width: 31px;
-  padding: 12px 0px;
+  padding: 12px 0;
+  margin: 0;
   box-sizing: border-box;
   border: none;
   font-family: inherit;
@@ -1404,6 +1410,18 @@ body {
 .pagination-link:active {
   color: #FFFFFF4D;
   background-color: #82B3D3;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.pagination-current:hover,
+.pagination-current:focus,
+.pagination-current:active {
+  color: #000000;
+  background-color: #F2F2F2;
 }
 
 .social-button:hover .social-icon {
